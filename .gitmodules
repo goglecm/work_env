@@ -1,0 +1,6 @@
+[submodule ".tmux/plugins/tmux-battery"]
+	path = .tmux/plugins/tmux-battery
+	url = https://github.com/tmux-plugins/tmux-battery
+[submodule ".tmux/plugins/tmux-wifi"]
+	path = .tmux/plugins/tmux-wifi
+	url = https://github.com/gmoe/tmux-wifi
