@@ -4,3 +4,18 @@
 [submodule ".tmux/plugins/tmux-wifi"]
 	path = .tmux/plugins/tmux-wifi
 	url = https://github.com/gmoe/tmux-wifi
+[submodule ".vim/pathogen_disabled/vim-latex-live-preview"]
+	path = .vim/pathogen_disabled/vim-latex-live-preview
+	url = https://github.com/xuhdev/vim-latex-live-preview.git
+[submodule ".vim/pathogen_post_800/ale"]
+	path = .vim/pathogen_post_800/ale
+	url = https://github.com/dense-analysis/ale.git
+[submodule ".vim/pathogen_post_800/vim-comfortable-motion"]
+	path = .vim/pathogen_post_800/vim-comfortable-motion
+	url = https://github.com/yuttie/comfortable-motion.vim
+[submodule ".vim/pathogen_post_800/vim-tmux-focus-events"]
+	path = .vim/pathogen_post_800/vim-tmux-focus-events
+	url = https://github.com/tmux-plugins/vim-tmux-focus-events.git
+[submodule ".vim/pathogen_post_800/vim-gutentags"]
+	path = .vim/pathogen_post_800/vim-gutentags
+	url = https://github.com/ludovicchabant/vim-gutentags.git
