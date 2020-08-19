@@ -232,6 +232,7 @@ endif
 " (*) FZF - (700+) Fuzzy searcher commands, such as :Bu, :Tags, etc.
 " (-) Latex Live Preview - (730+) Automatically call pdflatex when not in insert.
 " (*) GPU PG - (700+) Allow reading encrypted files.
+" (*) C++ omnicomplete - (700+) Auto-completion for C/C++.
 
 
 "
