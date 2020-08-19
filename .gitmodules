@@ -61,3 +61,6 @@
 [submodule ".vim/pathogen_common/vim-unimpaired"]
 	path = .vim/pathogen_common/vim-unimpaired
 	url = https://github.com/tpope/vim-unimpaired.git
+[submodule ".vim/pathogen_common/vim-cpp-omni"]
+	path = .vim/pathogen_common/vim-cpp-omni
+	url = https://github.com/vim-scripts/OmniCppComplete
