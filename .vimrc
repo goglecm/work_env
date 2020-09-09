@@ -260,6 +260,8 @@ let g:gitgutter_max_signs = 5000 " Allow lots of signs on the left column.
 " autocmd FileType * nested :TagbarOpen " Open tag bar for all ext.
 autocmd FileType c,cc,h,py,hpp,cpp nested :TagbarOpen " Open tag bar for these ext.
 
+let g:tagbar_show_linenumbers = 1
+
 
 "
 " Autosave
