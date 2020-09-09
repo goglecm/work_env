@@ -1,6 +1,9 @@
 # No duplicate entries
 HISTCONTROL=ignorespace:ignoredups:erasedups
 
+# Append history
+shopt -s histappend
+
 # History size
 HISTFILESIZE=99999
 HISTSIZE=99999
