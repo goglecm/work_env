@@ -121,6 +121,16 @@ set spell
 
 
 " %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+""""""""""""""""
+" Key mappings "
+""""""""""""""""
+" When working with a tags file, <C-]> jumps to the first definition. <g-]>
+" shows a list of the tag present in the tags. This mapping jumps to the
+" definition if one definition exists, otherwise it shows a tag list.
+nnoremap <C-]> g<C-]>
+
+
+" %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 """"""""""""""""""
 " Simple plugins "
 """"""""""""""""""
