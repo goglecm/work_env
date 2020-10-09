@@ -327,3 +327,14 @@ set rtp+=~/.fzf
 
 " Set default previewer.
 " let g:livepreview_previewer = 'okular'
+
+
+
+" %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+""""""""""""""""""""""""
+" Host specific config "
+""""""""""""""""""""""""
+
+if filereadable(expand("~/.vimrc_private"))
+    source ~/.vimrc_private
+endif
