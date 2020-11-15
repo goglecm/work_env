@@ -64,3 +64,6 @@
 [submodule ".vim/pathogen_common/vim-cpp-omni"]
 	path = .vim/pathogen_common/vim-cpp-omni
 	url = https://github.com/vim-scripts/OmniCppComplete
+[submodule ".vim/pathogen_common/vimwiki"]
+	path = .vim/pathogen_common/vimwiki
+	url = https://github.com/vimwiki/vimwiki.git
