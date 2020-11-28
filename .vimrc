@@ -243,6 +243,7 @@ endif
 " (-) Latex Live Preview - (730+) Automatically call pdflatex when not in insert.
 " (*) GPU PG - (700+) Allow reading encrypted files.
 " (*) C++ omnicomplete - (700+) Auto-completion for C/C++.
+" (*) vimwiki - (740+) Personal wiki.
 
 
 "
@@ -328,6 +329,14 @@ set rtp+=~/.fzf
 " Set default previewer.
 " let g:livepreview_previewer = 'okular'
 
+
+"
+" Vim wiki
+"
+
+let g:vimwiki_list = [
+            \ {'path'      : '~/repos/work_env/wikis',
+            \  'path_html' : '~/repos/work_env/wikis_html'}]
 
 
 " %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
