@@ -15,3 +15,13 @@ export GPG_TTY
 # FZF
 export FZF_DEFAULT_OPTS='--preview-window=right:60%:wrap'
 export FZF_CTRL_R_OPTS="--preview 'echo {}' --preview-window down:3:hidden:wrap --bind '?:toggle-preview'"
+
+# Default tools
+export GIT_EDITOR=vim
+export VISUAL=vim
+export EDITOR=vim
+export PAGER=less
+
+export CGO_CXXFLAGS_ALLOW=".*"
+export CGO_LDFLAGS_ALLOW=".*"
+export CGO_CFLAGS_ALLOW=".*"
