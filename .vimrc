@@ -337,6 +337,7 @@ set rtp+=~/.fzf
 let g:vimwiki_list = [
             \ {'path'      : '~/repos/work_env/wikis',
             \  'path_html' : '~/repos/work_env/wikis_html'}]
+autocmd Filetype vimwiki setlocal tw=80
 
 
 " %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
