@@ -64,6 +64,10 @@ set expandtab
 set nowrap
 
 " Allow multiple undos
+if !isdirectory($HOME."/.vim_undo")
+    call mkdir($HOME."/.vim_undo", "", 0770)
+endif
+set undodir=~/.vim_undo
 set undofile
 
 " Options to format the text when line-breaking
@@ -118,6 +122,11 @@ set spellfile=~/.vim/spell/en.utf-8.add
 " Enable spelling. Use nospell to disable.
 set spell
 
+" The swap files are saved in a separate root (the '//' forces a full path).
+if !isdirectory($HOME."/.vim_swp")
+    call mkdir($HOME."/.vim_swp", "", 0770)
+endif
+set directory^=$HOME/.vim_swp//
 
 
 " %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
