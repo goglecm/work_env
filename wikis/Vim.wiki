@@ -1,0 +1,6 @@
+Use `set textwidth = 80` to set a hard wrap. Also, to hard wrap some existing
+text, use `gq` on the selection.
+
+Use `autocmd Filetype html setlocal ts=2 tw=77` to set/change some options
+depending on the file type, where `html` is the file type and `ts=2 tw=77` are
+the options. To get the filetype of the current file, use `:set filetype?`.

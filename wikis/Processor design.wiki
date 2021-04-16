@@ -1,0 +1,22 @@
+= Active projects =
+    * [[https://github.com/goglecm/gpapd|GPAPD]]: General Purpose Asynchronous Processor Design
+
+= Processor design =
+
+The design of a processor consists of a few stages:
+    * architecture design - define what are the top level modules, their duties
+      and how they interact with one another. Also, define the goals of the
+      processor, in terms of parallelism, performance, EM interference, power
+      consumption, compatibility, testability, usability, etc.
+    * module decomposition - define the micro-architectures of each modules, up
+      to the level of basic building blocks.
+    * RTL block design - implement each basic block using  HDL language, and
+      connect them together to form modules and sub-modules.
+    * RTL synthesis - convert the RTL implementation into a lower level circuit
+      implementation (gates and transistors).
+
+During each of the design stages, the processor should be tested. There are
+various testing techniques depending on the type of processor being designed.
+These include formal validation and verification.
+
+

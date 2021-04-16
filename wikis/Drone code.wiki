@@ -1,0 +1,192 @@
+= Contents =
+- [[#Permanent static and dynamic flying restrictions|Permanent static and dynamic flying restrictions]]
+    - [[#Permanent static and dynamic flying restrictions#Static objects|Static objects]]
+        - [[#Permanent static and dynamic flying restrictions#Static objects#Restricted zones|Restricted zones]]
+            - [[#Permanent static and dynamic flying restrictions#Static objects#Restricted zones#Airports|Airports]]
+            - [[#Permanent static and dynamic flying restrictions#Static objects#Restricted zones#Restricted airspace|Restricted airspace]]
+            - [[#Permanent static and dynamic flying restrictions#Static objects#Restricted zones#Other structures|Other structures]]
+    - [[#Permanent static and dynamic flying restrictions#Dynamic objects|Dynamic objects]]
+    - [[#Permanent static and dynamic flying restrictions#Temporary flying restrictions|Temporary flying restrictions]]
+    - [[#Permanent static and dynamic flying restrictions#Local flying restrictions|Local flying restrictions]]
+    - [[#Permanent static and dynamic flying restrictions#Exemptions|Exemptions]]
+- [[#Flight safety|Flight safety]]
+    - [[#Flight safety#Preparation|Preparation]]
+    - [[#Flight safety#Weather conditions|Weather conditions]]
+    - [[#Flight safety#Health conditions|Health conditions]]
+    - [[#Flight safety#During the flight|During the flight]]
+    - [[#Flight safety#Incident response|Incident response]]
+- [[#Regulations|Regulations]]
+    - [[#Regulations#Licences and insurance|Licences and insurance]]
+- [[#Privacy|Privacy]]
+    - [[#Privacy#Privacy laws|Privacy laws]]
+    - [[#Privacy#Preparation|Preparation]]
+
+
+These rules apply for:
+- drones/aircraft models under 20kg
+- drones/aircraft models flown outdoors in the UK
+
+== Permanent static and dynamic flying restrictions ==
+
+- Geo-awareness software should not be disabled on drones.
+
+=== Static objects ===
+
+==== Restricted zones ====
+
+===== Airports =====
+
+- The drone should not fly in flight restriction zones (FRZ), unless given
+  permission. Consequences include 5 years in prison.
+- The FRZs for airports in the UK are here: https://dronesafe.uk/restrictions/
+
+- Each airport has an FRZ, which is:
+    * within the 4-4.5km (2-2.5 nautical miles) around the centre of the airport
+    * 5km away from each end of any runway, with a width of 1km
+
+===== Restricted airspace =====
+
+- The drone should not fly in zones with restricted airspace. These are around:
+    - prisons
+    - military bases
+    - royal palaces
+    - government sites
+
+===== Other structures =====
+
+- The drone should not fly above 120m from the surface (terrain, hills,
+  etc.).
+- The drone should not be closer than 50m from buildings, structures (statues,
+  building cranes, etc.), vehicles, trains, boats, etc., unless given
+  permission.
+- The drone should not fly closer than 150m from built-up and busy areas (parks,
+  beaches, cities, housing estates, etc.), as well as above them.
+
+=== Dynamic objects ===
+
+- The drone should not be closer than 50m when flying or 30m when taking-off or
+  landing from people, unless given permission.
+- The drone should not fly closer than 150m from crowds of 1000+ people, as well
+  as above them.
+- The drone should not fly close enough to animals to disturb them.
+- There may be aircraft flying below 120m (police/ambulance helicopters,
+  military, crop, electricity pylons). The drone should safely land and stop
+  flying when these are spotted.
+
+=== Temporary flying restrictions ===
+
+- Some areas can be temporarily put under flying restrictions where the drone
+  can't fly. These include:
+    - events (airshows, political conferences)
+    - emergency incidents (fires, floods, traffic incidents)
+- The notices on such restrictions are available at: https://drones.nats.aero/home
+
+=== Local flying restrictions ===
+
+- There may be additional local bye laws for flying restrictions which need be
+  followed.
+- There may be signs designating a site as a flying restriction area.
+
+=== Exemptions ===
+
+- Permission from the airports or the Civil Aviation Authority is required when:
+    - the drone is over 20kg
+    - the drone could fly in any restricted zones
+    - the drone is flown for commercial purposes
+- Some club memberships may allow additional flying permissions.
+
+== Flight safety ==
+
+=== Preparation ===
+
+- Note the following information:
+    - how far the drone an fly
+    - how long can the drone fly
+    - there is a "home" location the drone can return to in case of a problem
+
+- Before flying, make sure to:
+    - charge and check the battery/fuel levels in both, the drone and the
+      controller
+    - update the drone software and FRZs
+
+=== Weather conditions ===
+
+- The drone should be in direct sight at all times, without the need for
+  external viewing equipment (binoculars, etc.).
+- Fog or sun glares may cause loss of sight of the drone.
+- The drone operator should be clearly seen by other people, so that they know
+  who's responsible.
+
+- Stop flying when:
+    - the winds are too strong for the drone to handle (on the ground and in the
+      air)
+    - it rains or snows
+    - the temperature is too low (batteries will last shorter in cold weather)
+
+- Do not attempt to fly a drone when you:
+    - feel cold or the weather is wet (this will affect your ability to control
+      he drone).
+    - stand in the sun too much (this will affect your ability to concentrate)
+
+=== Health conditions ===
+
+- Do not drink and fly
+- Do not fly under the influence of drugs or medicine
+- Do not fly when tired or unwell
+
+=== During the flight ===
+
+- Stop flying when:
+    - weather conditions change unfavourably
+    - it is no longer safe to fly due to emergency responses or change in
+      circumstances
+
+=== Incident response ===
+
+- When something goes wrong and something dangerous happens, report it to the
+  Civil Aviation Authority at: http://www.aviationreporting.eu/AviationReporting/
+- When the drone crashes somewhere where you can't access your drone, tell the
+  site owner immediately (especially for sensitive sites).
+- Report suspicious and dangerous usages of drones to the police or site
+  security.
+
+== Regulations ==
+
+The flying of a drone should be within all existing laws and not just the
+aviation laws.
+
+=== Licences and insurance ===
+
+- Drones can be used for recreational purposes only.
+- Drones used for commercial purposes (making money) require a commercial
+  license.
+- Insurance for damages caused by the drone is optional for recreational use,
+  and compulsory for any other use.
+- The person who flies the drone needs a *flyer ID* (lasts 3 years).
+- The person/organisation responsible for the drone needs an *operator ID*
+  (lasts 1 year). All drones need be labeled with the operator ID.
+- A drone operator should only allow the flying of the drone to those with
+  flyer's IDs.
+
+== Privacy ==
+
+These apply to any drone which has *recording* cameras.
+
+=== Privacy laws ===
+
+- *Data Protection laws* apply when pictures are taken of people in locations
+  they expect privacy (home, garden, etc.).
+- *GDPR laws* apply to all taken pictures as they may include personal
+  information (facial recognition, time and location).
+- It is illegal to take pictures for criminal purposes.
+
+=== Preparation ===
+
+- To better control the type of pictures taken and avoid breaking laws and
+  privacy invasion, check:
+    - the recording quality
+    - zoom levels
+    - recording controls (start/stop)
+- Let people know before taking pictures of them.
+- Do not share harmful or unfair pictures.
+- Store any pictures safely.

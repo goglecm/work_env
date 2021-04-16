@@ -1,0 +1,11 @@
+= TTY =
+
+On Fedora:
+
+* Enter TTY:
+  - `Ctrl+Alt+F3` (onwards) - open new TTY sessions
+  - `Ctrl+Alt+F2` - first session, usually the GUI
+  - `Ctrl+Alt+F1` - the login screen
+
+* Change TTY font:
+  - `setfont /lib/kbd/consolefonts/iso07u-16.psfu.gz`

@@ -1,0 +1,85 @@
+= Contents =
+    - [[#Generic programming|Generic programming]]
+        - [[#Generic programming#Policies|Policies]]
+            - [[#Generic programming#Policies#What are policies|What are policies]]
+            - [[#Generic programming#Policies#Motivation for policies|Motivation for policies]]
+
+= Active projects =
+    * [[https://github.com/goglecm/AutoBrightnessCam|AutoBrightnessCam]]: C/C++
+
+= Generic programming  =
+
+== Policies ==
+
+
+=== What are policies ===
+
+For a given user design, various aspects of it need be implemented. The
+implementation of each of these aspects can be done in many different ways (the
+multiplicity of software design). *Libraries* provide interfaces to
+implementations of certain aspects. The set of implementations of one such
+aspect (the *policy*) can be achieved using a set of *policy classes*.
+
+These aspects can be:
+- what kind of storage mechanism is used (static, stack, dynamic, etc.)
+- what kind of threading model should be used (single vs multi)
+- whether safety or performance are important (check pointers for null or not)
+- what kind of smart pointers to use (reference counted or not)
+
+Policies solve the multiplicity of software design issue, which is:
+
+- There are many ways in which aspects can be mixed and used, so how does a
+  library present all the implementations of multiple aspects?
+
+=== Motivation for policies ===
+
+Other ways of solving the multiplicity of software design issue:
+
+*Do it all interface*
+
+A 'do it all interface', which provides all possible implementations of an
+aspect in a single interface, has a few disadvantages:
+- intellectual overhead - big learning curve as the user needs to search and
+  learn different implementations before making a choice
+- inefficient - mush slower than hand crafted code (i.e. not actually using the
+  interface)
+- loss of static type safety - design constraints not enforced at compile time
+
+User designs have constraints which need be enforced at compile time (i.e. two
+singletons are not allowed). With a 'do it all interface', one may use certain
+interface constructs in a syntactically, but not semantically, valid way, as
+there are too few or no compile time (static) checks in place. Here's why:
+
+One can instantiate a class on the stack and later use a destructor for
+dynamically instantiated classes, or try to alter/use the reference count of a
+non-reference counted pointer. This will cause runtime errors, which could have
+been caught at compile time.
+
+_Note:_ A design oriented library should have static type safety.
+
+*Small classes for each implementation (combination of aspects)*
+
+A set of small classes define a fixed implementations of all aspects. The
+disadvantages are:
+- code replication - each combination is just slightly different from the next
+- rigid - the customisation of an aspect requires changing all classes
+- exponential library size - the number of classes at least doubles once a new
+  aspect of the library is added
+
+Given these aspects:
+- threading model
+- reference model
+
+The possible small classes in the library for a smart pointer are:
+- single threaded reference counted smart pointer
+- multi threaded reference counted smart pointer
+- single threaded reference linked smart pointer
+- multi threaded reference linked smart pointer
+
+If another aspect of the smart pointer library is added, the storage, then
+the number of existing small classes will be multiplied by the number of storage
+implementations.
+
+_Note:_ A design oriented library should allow the user to enforce their own
+constraints, rather than be limited by some pre-defined library constraints.
+
