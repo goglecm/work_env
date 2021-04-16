@@ -5,7 +5,7 @@
 	path = .tmux/plugins/tmux-wifi
 	url = https://github.com/gmoe/tmux-wifi
 [submodule ".vim/pathogen_disabled/vim-latex-live-preview"]
-	path = .vim/pathogen_disabled/vim-latex-live-preview
+	path = .vim/pathogen_common/vim-latex-live-preview
 	url = https://github.com/xuhdev/vim-latex-live-preview.git
 [submodule ".vim/pathogen_post_800/ale"]
 	path = .vim/pathogen_post_800/ale
