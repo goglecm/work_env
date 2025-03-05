@@ -1,0 +1,15 @@
+[user]
+	name = John
+	email = goglecm@pm.me
+[core]
+	preloadindex = true
+	editor = vim
+	hookspath = ~/.githooks
+[pager]
+	log = true
+    diff = true
+[push]
+	default = simple
+
+[include]
+    path = ~/.gitconfig_private
