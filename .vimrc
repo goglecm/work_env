@@ -53,9 +53,15 @@ set showcmd
 
 " Set tab width
 set tabstop=4
+set softtabstop=4
+autocmd FileType systemverilog,verilog setlocal tabstop=2 softtabstop=2
 
 " Set left/right shift amount
 set shiftwidth=4
+autocmd FileType systemverilog,verilog setlocal shiftwidth=2
+
+" Delete a 'tab' worth of spaces at a time
+autocmd FileType systemverilog,verilog setlocal smarttab
 
 " Insert spaces instead of tabs
 set expandtab
@@ -73,7 +79,7 @@ set undofile
 " Options to format the text when line-breaking
 set formatoptions+=w,n,b,j
 
-if v:version >= 800
+if v:version >= 801
     set formatoptions+=p
 endif
 
@@ -120,7 +126,15 @@ set spelllang=en
 set spellfile=~/.vim/spell/en.utf-8.add
 
 " Enable spelling. Use nospell to disable.
-set spell
+set nospell
+
+" Automatically fold code where there are comment markers (such as {{{ }}}).
+set fdm=marker
+
+augroup bind_ft
+    au!
+    autocmd BufNewFile,BufRead *.bind   set syntax=verilog
+augroup END
 
 " The swap files are saved in a separate root (the '//' forces a full path).
 if !isdirectory($HOME."/.vim_swp")
@@ -170,7 +184,7 @@ autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
 " ALE
 "
 
-if v:version >= 800
+if v:version >= 801
     " Turn off ALE built-in completion.
     let g:ale_completion_enabled = 0
 endif
@@ -188,7 +202,7 @@ endif
 " Summary:
 
 " (*) Delayed completion (748+)
-" (*) Integration with tmux (800+)
+" (*) Integration with tmux (801+)
 " (*) Pathogen (700+)
 
 
@@ -202,21 +216,19 @@ endif
 "
 " Integrate with tmux
 "
-if v:version >= 800
+if v:version >= 801
     execute vimtmuxclipboard#Enable()
 endif
 
 "
 " Pathogen
 "
-if v:version >= 800
+if v:version >= 801
     execute pathogen#infect(
                 \ '~/.vim/pathogen_common/{}',
                 \ '~/.vim/pathogen_post_800/{}')
 else
-    execute pathogen#infect(
-                \ '~/.vim/pathogen_common/{}',
-                \ '~/.vim/pathogen_pre_800/{}')
+    execute pathogen#infect('~/.vim/pathogen_common/{}')
 endif
 
 
@@ -241,15 +253,15 @@ endif
 " (*) Undotree - (700+) Show edit history tree.
 " (*) Table mode - (700+) Create tables, "\tm" to toggle.
 " (*) Line diff - (700+) Diff tool between 2 selections, :Linediff.
-" (*) ALE - (800+) Linter
+" (*) ALE - (801+) Linter
 " (*) Operator user - (700+) Define own operators, needed by clang-format.
 " (*) Clang format - (700+) Format code using clang-format.
 " (*) Unimpaired - (700+) Allow back/forth keys ]c [c, etc.
 " (*) C++ highlighting - (700+) Better syntax highlighting for C++.
-" (*) Gutentags - (800+) Regenerate tags.
-" (*) Comfortable motion - (800+) Allow smooth scrolling.
+" (*) Gutentags - (801+) Regenerate tags.
+" (*) Comfortable motion - (801+) Allow smooth scrolling.
 " (*) FZF - (700+) Fuzzy searcher commands, such as :Bu, :Tags, etc.
-" (-) Latex Live Preview - (730+) Automatically call pdflatex when not in insert.
+" (*) Latex Live Preview - (730+) Automatically call pdflatex when not in insert.
 " (*) GPU PG - (700+) Allow reading encrypted files.
 " (*) C++ omnicomplete - (700+) Auto-completion for C/C++.
 " (*) vimwiki - (740+) Personal wiki.
@@ -276,7 +288,7 @@ let g:tagbar_show_linenumbers = 1
 "
 " Autosave
 "
-let g:auto_save = 1 " Enable at startup
+let g:auto_save = 0 " Enable at startup
 let g:auto_save_write_all_buffers = 1 " Save all buffers every updatetime
 let g:auto_save_no_updatetime = 1 " Do not modify updatetime
 let g:auto_save_in_insert_mode = 0
@@ -301,7 +313,7 @@ let g:table_mode_header_fillchar = '='
 let g:clang_format#style_options = {
             \ "AlignTrailingComments" : "true",
             \ "BreakBeforeBraces" : "Allman",
-            \ "ColumnLimit" : "160"
+            \ "ColumnLimit" : "120"
             \ }
 
 "
@@ -321,6 +333,7 @@ let c_no_curly_error = 1
 
 " Look for .gutctags in the current directory and parse it.
 let g:gutentags_project_root = ['.gutctags']
+let g:gutentags_cache_dir="~/.vim_tags"
 
 
 "
